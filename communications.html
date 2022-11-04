@@ -10,13 +10,44 @@
 </head>
 
 <body>
-    <a href="ReedRogers_profile.html">Profile</a>
-    <a href="reflection.html">Reflection</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="qualifications.html">Qualifications</a>
-    <a href="communications.html">Communications</a>
+    <div class="topnav">
+        <a href="ReedRogers_profile.html">Overview</a>
+        <a href="reflection.html">Academics</a>
+        <a href="achievements.html">Soccer</a>
+        <a href="qualifications.html">Resume</a>
+        <a href="communications.html">Contact</a>
+    </div>
 
+    <h1> Interested in Contacting Me? Let's Get Some Information About You.</h1>
 
-</body>
+    <form action="thanks.html">
+        <p1>
+            First Name: <input type="text" name="fname" oninvalid="alert('You should only have one first name!')"
+                pattern="[^' ']+" value="John" size="20" maxlength="20">
+            Last Name: <input type="text" name="lname" oninvalid="alert('You should only have one last name!')"
+                pattern="[^' ']+" value="Doe" size="20" maxlength="20">
+            <br>
+            <br>
 
-</html>
+            Tell me a little bit about yourself or why you are contacting me:
+            <br>
+            <center>
+                <textarea rows=10 cols=80 name="comments" wrap="virtual">Write your response here ...</textarea>
+            </center>
+            <br>
+
+            Email adress: <input type="email" name="email" value="example@gmail.com" size="20" maxlength="50">
+            Telephone Number: <input type="tel" name="phoneNumber" value="2175021118" size="20" maxlength="10"
+                oninvalid="alert('You must have 10 digits in your number and cannot include spaces!')"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+
+            Reset button: <input type="reset" value="Reset the form fields">
+            Submit button: <input type="submit" name="submit_button" value="Submit the Form">
+        </p1>
+        
+        <div>
+            <br>
+            <p1>* Please note that this page does not actually use a .cgi file to log the information from the form, this is just an example of what
+                the contact page could look like. *
+            </p1>
+        </div>
